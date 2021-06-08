@@ -1,0 +1,44 @@
+body {
+    background-image: url("../images/SVG/background1.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, label {
+    font-family: 'Montserrat', sans-serif;
+    color: #f8f8ff;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    color: #F95466;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-white {
+    color: #f8f8ff;
+}
+
+.text-black {
+    color: #282B33;
+}
+
+.glassmorphism {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20.0px );
+    -webkit-backdrop-filter: blur( 20.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.button {
+    background-color: #F95466;
+}
+
+.button:hover {
+    background-color: #F83B50;
+}
