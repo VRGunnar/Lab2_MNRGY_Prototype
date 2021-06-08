@@ -17,38 +17,50 @@
     <title>View your water info!</title>
 </head>
 <body class="px-4">
-
-<svg class="mt-4" xmlns="http://www.w3.org/2000/svg" width="23.482" height="17.219" viewBox="0 0 23.482 17.219">
-    <defs>
-        <style>
-            .cls-1 {
-                fill: #f8f8ff;
-            }
-        </style>
-    </defs>
-    <g id="fast-forward" transform="translate(23.482 81.232) rotate(180)">
-        <g id="Group_22" data-name="Group 22" transform="translate(10.175 64.013)">
-            <g id="Group_21" data-name="Group 21">
-                <path id="Path_294" data-name="Path 294" class="cls-1" d="M221.106,72.1l-7.044-7.827a.783.783,0,0,0-.582-.26h-4.7a.782.782,0,0,0-.582,1.306l6.573,7.3-6.573,7.3a.783.783,0,0,0,.582,1.307h4.7a.793.793,0,0,0,.582-.258l7.044-7.827A.783.783,0,0,0,221.106,72.1Z" transform="translate(-208 -64.013)"/>
+<a href="dashboard.php">
+    <svg class="mt-4" xmlns="http://www.w3.org/2000/svg" width="23.482" height="17.219" viewBox="0 0 23.482 17.219">
+        <defs>
+            <style>
+                .cls-1 {
+                    fill: #f8f8ff;
+                }
+            </style>
+        </defs>
+        <g id="fast-forward" transform="translate(23.482 81.232) rotate(180)">
+            <g id="Group_22" data-name="Group 22" transform="translate(10.175 64.013)">
+                <g id="Group_21" data-name="Group 21">
+                    <path id="Path_294" data-name="Path 294" class="cls-1"
+                          d="M221.106,72.1l-7.044-7.827a.783.783,0,0,0-.582-.26h-4.7a.782.782,0,0,0-.582,1.306l6.573,7.3-6.573,7.3a.783.783,0,0,0,.582,1.307h4.7a.793.793,0,0,0,.582-.258l7.044-7.827A.783.783,0,0,0,221.106,72.1Z"
+                          transform="translate(-208 -64.013)"/>
+                </g>
+            </g>
+            <g id="Group_24" data-name="Group 24" transform="translate(0 64.013)">
+                <g id="Group_23" data-name="Group 23" transform="translate(0)">
+                    <path id="Path_295" data-name="Path 295" class="cls-1"
+                          d="M13.106,72.1,6.062,64.273a.783.783,0,0,0-.582-.26H.784A.782.782,0,0,0,.2,65.319l6.573,7.3L.2,79.925a.783.783,0,0,0,.582,1.307h4.7a.793.793,0,0,0,.582-.258l7.044-7.827A.783.783,0,0,0,13.106,72.1Z"
+                          transform="translate(0 -64.013)"/>
+                </g>
             </g>
         </g>
-        <g id="Group_24" data-name="Group 24" transform="translate(0 64.013)">
-            <g id="Group_23" data-name="Group 23" transform="translate(0)">
-                <path id="Path_295" data-name="Path 295" class="cls-1" d="M13.106,72.1,6.062,64.273a.783.783,0,0,0-.582-.26H.784A.782.782,0,0,0,.2,65.319l6.573,7.3L.2,79.925a.783.783,0,0,0,.582,1.307h4.7a.793.793,0,0,0,.582-.258l7.044-7.827A.783.783,0,0,0,13.106,72.1Z" transform="translate(0 -64.013)"/>
-            </g>
-        </g>
-    </g>
-</svg>
-
+    </svg>
+</a>
 <div class="mt-4 mb-6">
     <h2 class="font-extralight text-2xl">View your info of</h2>
     <h1 class="font-bold text-2xl mb-2">Water</h1>
     <span class="w-4/5 bg-blue h-0.5 block self-center"></span>
 </div>
-
-<div style="width: 350px; height: 350px;">
-    <div id="donut" style="width: 100%; height: 100%;"></div>
+<div class="flex justify-center items-center ">
+    <div class="circle flex justify-center items-center">
+        <div class="tempCircle flex justify-center items-center">
+            <div class="infoCircle flex flex-col justify-center items-center text-white">
+                <p class="font-bold text-6xl">50<sup class="text-3xl">°C</sup></p>
+                <p class="font-light text-base">BOILER TEMPERATURE</p>
+            </div>
+        </div>
+    </div>
 </div>
 
+
+<script src="js/water.js"></script>
 </body>
 </html>
