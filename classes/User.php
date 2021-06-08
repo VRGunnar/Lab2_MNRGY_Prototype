@@ -34,6 +34,24 @@ class User {
         var_dump($result);
         return $result;
     }
+
+    static function userLogin($username, $password)
+    {
+        $conn = db::getConnection();
+        $statement = $conn->prepare("select * from users where username = :username");
+        $statement->bindValue(":username", $username);
+        $statement->execute();
+        $user = $statement->fetch();
+        if (!$user){
+            return false;
+        }
+        $hash = $user["password"];
+        if(password_verify($password, $hash)){
+            return true;
+        }else{
+            return false;
+        }
+    }
     /**
      * @return mixed
      */
@@ -95,6 +113,9 @@ class User {
      */
     public function setPassword($password): void
     {
-        $this->password = $password;
+        $options = [
+            'cost' => 12,
+        ];
+        $this->password =  password_hash($password, PASSWORD_DEFAULT, $options);
     }
 }

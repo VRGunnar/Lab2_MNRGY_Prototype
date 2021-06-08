@@ -4,27 +4,20 @@ include_once(__DIR__ . "/classes/User.php");
 session_start();
 session_destroy();
 
-
 if (!empty($_POST)) {
-    try {
-        if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-            $user = new User($_POST['fullname'], $_POST['email'], $_POST['username'], $_POST['password']);
-            $user->setPassword($_POST['password']);
-            $saved = $user->saveUser();
-            if (!$saved) {
-                $error = "";
-            } else {
-                header("Location: index.php");
-            }
-        } else {
-            $error2 = "";
-        }
-    } catch (Throwable $th) {
-        $error = $th->getMessage();
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    if (User::userLogin($username, $password)) {
+        session_start();
+        $_SESSION["username"] = $username;
+        header("Location: dashboard.php");
+    } else {
+        $error = true;
     }
 }
-
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -38,10 +31,10 @@ if (!empty($_POST)) {
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
           rel="stylesheet">
-    <title>Sign up!</title>
+    <title>Log in!</title>
 </head>
 <body>
-<div class="flex flex-col gap-8 min-h-screen min-w-screen items-center justify-center">
+<div class="flex flex-col gap-8 min-h-screen items-center justify-center">
     <div class="mb-2">
         <h1 class="font-semibold text-2xl mb-2">Welcome to</h1>
         <svg class="" xmlns="http://www.w3.org/2000/svg" width="280.505" height="52.004" viewBox="0 0 280.505 52.004">
@@ -76,7 +69,7 @@ if (!empty($_POST)) {
         </svg>
     </div>
     <div class="w-10/12 glassmorphism p-8">
-        <h2 class="font-semibold text-xl mb-4">Sign up here!</h2>
+        <h2 class="font-semibold text-xl mb-4">Log in here!</h2>
         <form action="" method="post">
             <div class="grid justify-items-center">
                 <?php if (isset($error)): ?>
@@ -84,25 +77,10 @@ if (!empty($_POST)) {
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
                                     aria-hidden="true">&times;</span></button>
                         <ul>
-                            <li class="text-sm font-normal">Email or username already exists!</li>
+                            <li class="text-sm font-normal">Login credentials are incorrect.</li>
                         </ul>
                     </div>
                 <?php endif; ?>
-                <?php if (isset($error2)): ?>
-                    <div class="flex items-center gap-3 w-full h-10 border border-red-300 rounded px-4 bg-red-200">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
-                                    aria-hidden="true">&times;</span></button>
-                        <ul>
-                            <li class="text-sm font-normal">Invalid email!</li>
-                        </ul>
-                    </div>
-                <?php endif; ?>
-                <label class="pt-4 justify-self-start text-sm font-medium" for="fullname">Fullname</label>
-                <input class="w-full h-10 border border-gray-300 rounded px-2 bg-gray-100" id="fullname" name="fullname"
-                       type="text" placeholder="Full name" required>
-                <label class="pt-4 justify-self-start text-sm font-medium" for="email">Email</label>
-                <input class="w-full h-10 border border-gray-300 rounded px-2 bg-gray-100" id="email" name="email"
-                       type="email" placeholder="Email address" required>
                 <label class="pt-4 justify-self-start text-sm font-medium" for="username">Username</label>
                 <input class="w-full h-10 border border-gray-300 rounded px-2 bg-gray-100" id="username" name="username"
                        type="text" placeholder="Username" required>
@@ -110,11 +88,11 @@ if (!empty($_POST)) {
                 <input class="w-full h-10 border border-gray-300 rounded px-2 bg-gray-100" id="password" name="password"
                        type="password" placeholder="Password" required>
                 <input class="w-full h-10 text-white font-bold rounded mt-2 button"
-                       name="btnRegister" type="submit" value="Register">
+                       name="btnLogin" type="submit" value="Login">
             </div>
         </form>
-        <p class="text-sm font-normal text-center text-white mt-8">Already have an account?
-            <a class="font-bold" href="index.php">Log in</a>
+        <p class="text-sm font-normal text-center text-white mt-8">Don't have an account yet?
+            <a class="font-bold" href="signup.php">Sign up</a>
         </p>
     </div>
 
