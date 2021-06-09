@@ -141,6 +141,16 @@ button:focus-visible {
     width: 79%;
 }
 
+.line-w3 {
+    width: 0.12rem;
+}
+
+.line-h {
+    height: 100%;
+}
+
+
+
 /* Gas graph */
 .bar-graph-gas .year-gas {
     -webkit-animation: fade-in-text 2.2s 0.1s forwards;
@@ -167,9 +177,9 @@ button:focus-visible {
     border-radius: 30px;
     bottom: 40px;
     position: absolute;
-    width: 18px;
     text-align: center;
-    margin-left: 6px;
+    width: 25px;
+    margin-left: 4px;
 }
 
 .bar-graph-vertical-gas .year-gas {
@@ -411,9 +421,9 @@ button:focus-visible {
     border-radius: 30px;
     bottom: 40px;
     position: absolute;
-    width: 18px;
     text-align: center;
-    margin-left: 6px;
+    width: 25px;
+    margin-left: 4px;
 }
 
 .bar-graph-vertical-electricity .year-electricity {
@@ -621,6 +631,250 @@ button:focus-visible {
 }
 
 @-webkit-keyframes show-bar-12-vertical-electricity {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 34%;
+    }
+}
+
+/* Potential Energy graph */
+.bar-graph-potentialEnergy .year-potentialEnergy {
+    -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+    -moz-animation: fade-in-text 2.2s 0.1s forwards;
+    animation: fade-in-text 2.2s 0.1s forwards;
+}
+
+.bar-graph-vertical-potentialEnergy {
+    margin-top: 20px;
+    max-width: 680px;
+}
+
+.bar-graph-vertical-potentialEnergy .bar-container-potentialEnergy {
+    float: left;
+    height: 240px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    position: relative;
+    text-align: center;
+    width: 32px;
+}
+
+.bar-graph-vertical-potentialEnergy .bar-potentialEnergy {
+    border-radius: 30px;
+    bottom: 40px;
+    position: absolute;
+    text-align: center;
+    width: 25px;
+    margin-left: 4px;
+}
+
+.bar-graph-vertical-potentialEnergy .year-potentialEnergy {
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #f8f8ff;
+}
+
+.bar-graph-two-potentialEnergy .bar-one-potentialEnergy .bar-potentialEnergy {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-one-vertical-potentialEnergy 1.2s 0.1s forwards;
+    -moz-animation: show-bar-one-vertical-potentialEnergy 1.2s 0.1s forwards;
+    animation: show-bar-one-vertical-potentialEnergy 1.2s 0.1s forwards;
+}
+
+.bar-graph-two-potentialEnergy .bar-two-potentialEnergy .bar-potentialEnergy {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-two-vertical-potentialEnergy 1.2s 0.2s forwards;
+    -moz-animation: show-bar-two-vertical-potentialEnergy 1.2s 0.2s forwards;
+    animation: show-bar-two-vertical-potentialEnergy 1.2s 0.2s forwards;
+}
+
+.bar-graph-two-potentialEnergy .bar-three-potentialEnergy .bar-potentialEnergy {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-three-vertical-potentialEnergy 1.2s 0.3s forwards;
+    -moz-animation: show-bar-three-vertical-potentialEnergy 1.2s 0.3s forwards;
+    animation: show-bar-three-vertical-potentialEnergy 1.2s 0.3s forwards;
+}
+
+.bar-graph-two-potentialEnergy .bar-four-potentialEnergy .bar-potentialEnergy {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-four-vertical-potentialEnergy 1.2s 0.4s forwards;
+    -moz-animation: show-bar-four-vertical-potentialEnergy 1.2s 0.4s forwards;
+    animation: show-bar-four-vertical-potentialEnergy 1.2s 0.4s forwards;
+}
+
+.bar-graph-two-potentialEnergy .bar-five-potentialEnergy .bar-potentialEnergy {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-five-vertical-potentialEnergy 1.2s 0.5s forwards;
+    -moz-animation: show-bar-five-vertical-potentialEnergy 1.2s 0.5s forwards;
+    animation: show-bar-five-vertical-potentialEnergy 1.2s 0.5s forwards;
+}
+
+.bar-graph-two-potentialEnergy .bar-six-potentialEnergy .bar-potentialEnergy {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-six-vertical-potentialEnergy 1.2s 0.6s forwards;
+    -moz-animation: show-bar-six-vertical-potentialEnergy 1.2s 0.6s forwards;
+    animation: show-bar-six-vertical-potentialEnergy 1.2s 0.6s forwards;
+}
+
+.bar-graph-two-potentialEnergy .bar-seven-potentialEnergy .bar-potentialEnergy {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-seven-vertical-potentialEnergy 1.2s 0.7s forwards;
+    -moz-animation: show-bar-seven-vertical-potentialEnergy 1.2s 0.7s forwards;
+    animation: show-bar-seven-vertical-potentialEnergy 1.2s 0.7s forwards;
+}
+
+.bar-graph-two-potentialEnergy .bar-8-potentialEnergy .bar-potentialEnergy {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-8-vertical-potentialEnergy 1.2s 0.7s forwards;
+    -moz-animation: show-bar-8-vertical-potentialEnergy 1.2s 0.7s forwards;
+    animation: show-bar-8-vertical-potentialEnergy 1.2s 0.7s forwards;
+}
+
+.bar-graph-two-potentialEnergy .bar-9-potentialEnergy .bar-potentialEnergy {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-9-vertical-potentialEnergy 1.2s 0.7s forwards;
+    -moz-animation: show-bar-9-vertical-potentialEnergy 1.2s 0.7s forwards;
+    animation: show-bar-9-vertical-potentialEnergy 1.2s 0.7s forwards;
+}
+.bar-graph-two-potentialEnergy .bar-10-potentialEnergy .bar-potentialEnergy {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-10-vertical-potentialEnergy 1.2s 0.7s forwards;
+    -moz-animation: show-bar-10-vertical-potentialEnergy 1.2s 0.7s forwards;
+    animation: show-bar-10-vertical-potentialEnergy 1.2s 0.7s forwards;
+}
+
+.bar-graph-two-potentialEnergy .bar-11-potentialEnergy .bar-potentialEnergy {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-11-vertical-potentialEnergy 1.2s 0.7s forwards;
+    -moz-animation: show-bar-11-vertical-potentialEnergy 1.2s 0.7s forwards;
+    animation: show-bar-11-vertical-potentialEnergy 1.2s 0.7s forwards;
+}
+
+.bar-graph-two-potentialEnergy .bar-12-potentialEnergy .bar-potentialEnergy {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-12-vertical-potentialEnergy 1.2s 0.7s forwards;
+    -moz-animation: show-bar-12-vertical-potentialEnergy 1.2s 0.7s forwards;
+    animation: show-bar-12-vertical-potentialEnergy 1.2s 0.7s forwards;
+}
+
+/* Bar Graph Vertical Animations */
+@-webkit-keyframes show-bar-one-vertical-potentialEnergy {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 70%;
+    }
+}
+
+@-webkit-keyframes show-bar-two-vertical-potentialEnergy {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 45%;
+    }
+}
+
+@-webkit-keyframes show-bar-three-vertical-potentialEnergy {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 30%;
+    }
+}
+
+@-webkit-keyframes show-bar-four-vertical-potentialEnergy {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 70%;
+    }
+}
+
+@-webkit-keyframes show-bar-five-vertical-potentialEnergy {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 70%;
+    }
+}
+@-webkit-keyframes show-bar-six-vertical-potentialEnergy {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 30%;
+    }
+}
+
+@-webkit-keyframes show-bar-seven-vertical-potentialEnergy {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 30%;
+    }
+}
+
+@-webkit-keyframes show-bar-8-vertical-potentialEnergy {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 60%;
+    }
+}
+
+@-webkit-keyframes show-bar-9-vertical-potentialEnergy {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 20%;
+    }
+}
+
+@-webkit-keyframes show-bar-10-vertical-potentialEnergy {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 67%;
+    }
+}
+
+@-webkit-keyframes show-bar-11-vertical-potentialEnergy {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 56%;
+    }
+}
+
+@-webkit-keyframes show-bar-12-vertical-potentialEnergy {
     0% {
         height: 0;
     }

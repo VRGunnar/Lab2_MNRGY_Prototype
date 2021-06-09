@@ -7,6 +7,7 @@ abstract class Db
         include_once (__DIR__ . "../settings/settings.php");
 
         if (self::$conn === null) {
+//            self::$conn = new PDO('mysql:host=localhost;dbname=jonasce491_manergy', "jonasce491_manergy", "manergy123");
             self::$conn = new PDO('mysql:host=localhost:3307;dbname=db_mnrgy', "root", "root");
 //            self::$conn = new PDO('mysql:host=' . SETTINGS['db']['host'] . ":" . SETTINGS['db']['port'] . ';dbname=' . SETTINGS['db']['dbname'], SETTINGS['db']['user'], SETTINGS['db']['password']);
             return self::$conn;
