@@ -53,21 +53,21 @@ p {
 }
 
 .glassmorphism {
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(20.0px);
     -webkit-backdrop-filter: blur(20.0px);
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .glassmorphism2 {
-    background: rgba( 255, 255, 255, 0.35 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 20.0px );
-    -webkit-backdrop-filter: blur( 20.0px );
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20.0px);
+    -webkit-backdrop-filter: blur(20.0px);
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 button:focus-visible {
@@ -118,8 +118,8 @@ button:focus-visible {
     width: 260px;
     height: 260px;
     border-radius: 50%;
-    background: rgb(234,198,0);
-    background: linear-gradient(45deg, rgba(234,198,0,1) 0%, rgba(248,114,4,1) 100%);
+    background: rgb(234, 198, 0);
+    background: linear-gradient(45deg, rgba(234, 198, 0, 1) 0%, rgba(248, 114, 4, 1) 100%);
 }
 
 .infoCircle {
@@ -149,9 +149,23 @@ button:focus-visible {
     height: 100%;
 }
 
+.selectDiv {
+    border-radius: 4px;
+    display:inline-block;
+    overflow:hidden;
+    height: 2rem;
+    margin-top: 0.3em;
+}
 
+.selectBox {
+    width:140px;
+    height: 2rem;
+    border:0px;
+    outline:none;
+    border-radius: 4px;
+}
 
-/* Gas graph */
+    /* Gas graph */
 .bar-graph-gas .year-gas {
     -webkit-animation: fade-in-text 2.2s 0.1s forwards;
     -moz-animation: fade-in-text 2.2s 0.1s forwards;
@@ -263,6 +277,7 @@ button:focus-visible {
     -moz-animation: show-bar-9-vertical-gas 1.2s 0.7s forwards;
     animation: show-bar-9-vertical-gas 1.2s 0.7s forwards;
 }
+
 .bar-graph-two-gas .bar-10-gas .bar-gas {
     background-color: #1DD05D;
     border: 2px solid #f8f8ff;
@@ -332,6 +347,7 @@ button:focus-visible {
         height: 45%;
     }
 }
+
 @-webkit-keyframes show-bar-six-vertical-gas {
     0% {
         height: 0;
@@ -507,6 +523,7 @@ button:focus-visible {
     -moz-animation: show-bar-9-vertical-electricity 1.2s 0.7s forwards;
     animation: show-bar-9-vertical-electricity 1.2s 0.7s forwards;
 }
+
 .bar-graph-two-electricity .bar-10-electricity .bar-electricity {
     background-color: #EEAA01;
     border: 2px solid #f8f8ff;
@@ -576,6 +593,7 @@ button:focus-visible {
         height: 45%;
     }
 }
+
 @-webkit-keyframes show-bar-six-vertical-electricity {
     0% {
         height: 0;
@@ -751,6 +769,7 @@ button:focus-visible {
     -moz-animation: show-bar-9-vertical-potentialEnergy 1.2s 0.7s forwards;
     animation: show-bar-9-vertical-potentialEnergy 1.2s 0.7s forwards;
 }
+
 .bar-graph-two-potentialEnergy .bar-10-potentialEnergy .bar-potentialEnergy {
     background-color: #1DD05D;
     border: 2px solid #f8f8ff;
@@ -820,6 +839,7 @@ button:focus-visible {
         height: 70%;
     }
 }
+
 @-webkit-keyframes show-bar-six-vertical-potentialEnergy {
     0% {
         height: 0;
