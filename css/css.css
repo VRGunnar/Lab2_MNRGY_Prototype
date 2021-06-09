@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-color: #282B33;
 }
 
 h1, h2, h3, h4, h5, label {
@@ -47,6 +48,10 @@ p {
     background-color: #f8f8ff;
 }
 
+.bg-black {
+    background-color: #282B33;
+}
+
 .glassmorphism {
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 255, 255, 255, 0.03);
@@ -63,6 +68,10 @@ p {
     -webkit-backdrop-filter: blur( 20.0px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+button:focus-visible {
+    outline: none;
 }
 
 .button {
@@ -93,7 +102,8 @@ p {
     overflow: hidden;
     position: fixed;
     bottom: 20px;
-    width: 90%;
+    width: 91.5%;
+    z-index: 1;
 }
 
 .circle {
@@ -129,4 +139,492 @@ p {
 
 .line-w2 {
     width: 79%;
+}
+
+/* Gas graph */
+.bar-graph-gas .year-gas {
+    -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+    -moz-animation: fade-in-text 2.2s 0.1s forwards;
+    animation: fade-in-text 2.2s 0.1s forwards;
+}
+
+.bar-graph-vertical-gas {
+    margin-top: 20px;
+    max-width: 680px;
+}
+
+.bar-graph-vertical-gas .bar-container-gas {
+    float: left;
+    height: 240px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    position: relative;
+    text-align: center;
+    width: 32px;
+}
+
+.bar-graph-vertical-gas .bar-gas {
+    border-radius: 30px;
+    bottom: 40px;
+    position: absolute;
+    width: 18px;
+    text-align: center;
+    margin-left: 6px;
+}
+
+.bar-graph-vertical-gas .year-gas {
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #f8f8ff;
+}
+
+.bar-graph-two-gas .bar-one-gas .bar-gas {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-one-vertical-gas 1.2s 0.1s forwards;
+    -moz-animation: show-bar-one-vertical-gas 1.2s 0.1s forwards;
+    animation: show-bar-one-vertical-gas 1.2s 0.1s forwards;
+}
+
+.bar-graph-two-gas .bar-two-gas .bar-gas {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-two-vertical-gas 1.2s 0.2s forwards;
+    -moz-animation: show-bar-two-vertical-gas 1.2s 0.2s forwards;
+    animation: show-bar-two-vertical-gas 1.2s 0.2s forwards;
+}
+
+.bar-graph-two-gas .bar-three-gas .bar-gas {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-three-vertical-gas 1.2s 0.3s forwards;
+    -moz-animation: show-bar-three-vertical-gas 1.2s 0.3s forwards;
+    animation: show-bar-three-vertical-gas 1.2s 0.3s forwards;
+}
+
+.bar-graph-two-gas .bar-four-gas .bar-gas {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-four-vertical-gas 1.2s 0.4s forwards;
+    -moz-animation: show-bar-four-vertical-gas 1.2s 0.4s forwards;
+    animation: show-bar-four-vertical-gas 1.2s 0.4s forwards;
+}
+
+.bar-graph-two-gas .bar-five-gas .bar-gas {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-five-vertical-gas 1.2s 0.5s forwards;
+    -moz-animation: show-bar-five-vertical-gas 1.2s 0.5s forwards;
+    animation: show-bar-five-vertical-gas 1.2s 0.5s forwards;
+}
+
+.bar-graph-two-gas .bar-six-gas .bar-gas {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-six-vertical-gas 1.2s 0.6s forwards;
+    -moz-animation: show-bar-six-vertical-gas 1.2s 0.6s forwards;
+    animation: show-bar-six-vertical-gas 1.2s 0.6s forwards;
+}
+
+.bar-graph-two-gas .bar-seven-gas .bar-gas {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-seven-vertical-gas 1.2s 0.7s forwards;
+    -moz-animation: show-bar-seven-vertical-gas 1.2s 0.7s forwards;
+    animation: show-bar-seven-vertical-gas 1.2s 0.7s forwards;
+}
+
+.bar-graph-two-gas .bar-8-gas .bar-gas {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-8-vertical-gas 1.2s 0.7s forwards;
+    -moz-animation: show-bar-8-vertical-gas 1.2s 0.7s forwards;
+    animation: show-bar-8-vertical-gas 1.2s 0.7s forwards;
+}
+
+.bar-graph-two-gas .bar-9-gas .bar-gas {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-9-vertical-gas 1.2s 0.7s forwards;
+    -moz-animation: show-bar-9-vertical-gas 1.2s 0.7s forwards;
+    animation: show-bar-9-vertical-gas 1.2s 0.7s forwards;
+}
+.bar-graph-two-gas .bar-10-gas .bar-gas {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-10-vertical-gas 1.2s 0.7s forwards;
+    -moz-animation: show-bar-10-vertical-gas 1.2s 0.7s forwards;
+    animation: show-bar-10-vertical-gas 1.2s 0.7s forwards;
+}
+
+.bar-graph-two-gas .bar-11-gas .bar-gas {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-11-vertical-gas 1.2s 0.7s forwards;
+    -moz-animation: show-bar-11-vertical-gas 1.2s 0.7s forwards;
+    animation: show-bar-11-vertical-gas 1.2s 0.7s forwards;
+}
+
+.bar-graph-two-gas .bar-12-gas .bar-gas {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-12-vertical-gas 1.2s 0.7s forwards;
+    -moz-animation: show-bar-12-vertical-gas 1.2s 0.7s forwards;
+    animation: show-bar-12-vertical-gas 1.2s 0.7s forwards;
+}
+
+/* Bar Graph Vertical Animations */
+@-webkit-keyframes show-bar-one-vertical-gas {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 45%;
+    }
+}
+
+@-webkit-keyframes show-bar-two-vertical-gas {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 45%;
+    }
+}
+
+@-webkit-keyframes show-bar-three-vertical-gas {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 58%;
+    }
+}
+
+@-webkit-keyframes show-bar-four-vertical-gas {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 45%;
+    }
+}
+
+@-webkit-keyframes show-bar-five-vertical-gas {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 45%;
+    }
+}
+@-webkit-keyframes show-bar-six-vertical-gas {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 70%;
+    }
+}
+
+@-webkit-keyframes show-bar-seven-vertical-gas {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 70%;
+    }
+}
+
+@-webkit-keyframes show-bar-8-vertical-gas {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 60%;
+    }
+}
+
+@-webkit-keyframes show-bar-9-vertical-gas {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 20%;
+    }
+}
+
+@-webkit-keyframes show-bar-10-vertical-gas {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 67%;
+    }
+}
+
+@-webkit-keyframes show-bar-11-vertical-gas {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 56%;
+    }
+}
+
+@-webkit-keyframes show-bar-12-vertical-gas {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 34%;
+    }
+}
+
+/* Electricity graph */
+.bar-graph-electricity .year-electricity {
+    -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+    -moz-animation: fade-in-text 2.2s 0.1s forwards;
+    animation: fade-in-text 2.2s 0.1s forwards;
+}
+
+.bar-graph-vertical-electricity {
+    margin-top: 20px;
+    max-width: 680px;
+}
+
+.bar-graph-vertical-electricity .bar-container-electricity {
+    float: left;
+    height: 240px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    position: relative;
+    text-align: center;
+    width: 32px;
+}
+
+.bar-graph-vertical-electricity .bar-electricity {
+    border-radius: 30px;
+    bottom: 40px;
+    position: absolute;
+    width: 18px;
+    text-align: center;
+    margin-left: 6px;
+}
+
+.bar-graph-vertical-electricity .year-electricity {
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #f8f8ff;
+}
+
+.bar-graph-two-electricity .bar-one-electricity .bar-electricity {
+    background-color: #EEAA01;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-one-vertical-electricity 1.2s 0.1s forwards;
+    -moz-animation: show-bar-one-vertical-electricity 1.2s 0.1s forwards;
+    animation: show-bar-one-vertical-electricity 1.2s 0.1s forwards;
+}
+
+.bar-graph-two-electricity .bar-two-electricity .bar-electricity {
+    background-color: #EEAA01;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-two-vertical-electricity 1.2s 0.2s forwards;
+    -moz-animation: show-bar-two-vertical-electricity 1.2s 0.2s forwards;
+    animation: show-bar-two-vertical-electricity 1.2s 0.2s forwards;
+}
+
+.bar-graph-two-electricity .bar-three-electricity .bar-electricity {
+    background-color: #EEAA01;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-three-vertical-electricity 1.2s 0.3s forwards;
+    -moz-animation: show-bar-three-vertical-electricity 1.2s 0.3s forwards;
+    animation: show-bar-three-vertical-electricity 1.2s 0.3s forwards;
+}
+
+.bar-graph-two-electricity .bar-four-electricity .bar-electricity {
+    background-color: #EEAA01;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-four-vertical-electricity 1.2s 0.4s forwards;
+    -moz-animation: show-bar-four-vertical-electricity 1.2s 0.4s forwards;
+    animation: show-bar-four-vertical-electricity 1.2s 0.4s forwards;
+}
+
+.bar-graph-two-electricity .bar-five-electricity .bar-electricity {
+    background-color: #EEAA01;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-five-vertical-electricity 1.2s 0.5s forwards;
+    -moz-animation: show-bar-five-vertical-electricity 1.2s 0.5s forwards;
+    animation: show-bar-five-vertical-electricity 1.2s 0.5s forwards;
+}
+
+.bar-graph-two-electricity .bar-six-electricity .bar-electricity {
+    background-color: #EEAA01;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-six-vertical-electricity 1.2s 0.6s forwards;
+    -moz-animation: show-bar-six-vertical-electricity 1.2s 0.6s forwards;
+    animation: show-bar-six-vertical-electricity 1.2s 0.6s forwards;
+}
+
+.bar-graph-two-electricity .bar-seven-electricity .bar-electricity {
+    background-color: #EEAA01;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-seven-vertical-electricity 1.2s 0.7s forwards;
+    -moz-animation: show-bar-seven-vertical-electricity 1.2s 0.7s forwards;
+    animation: show-bar-seven-vertical-electricity 1.2s 0.7s forwards;
+}
+
+.bar-graph-two-electricity .bar-8-electricity .bar-electricity {
+    background-color: #EEAA01;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-8-vertical-electricity 1.2s 0.7s forwards;
+    -moz-animation: show-bar-8-vertical-electricity 1.2s 0.7s forwards;
+    animation: show-bar-8-vertical-electricity 1.2s 0.7s forwards;
+}
+
+.bar-graph-two-electricity .bar-9-electricity .bar-electricity {
+    background-color: #EEAA01;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-9-vertical-electricity 1.2s 0.7s forwards;
+    -moz-animation: show-bar-9-vertical-electricity 1.2s 0.7s forwards;
+    animation: show-bar-9-vertical-electricity 1.2s 0.7s forwards;
+}
+.bar-graph-two-electricity .bar-10-electricity .bar-electricity {
+    background-color: #EEAA01;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-10-vertical-electricity 1.2s 0.7s forwards;
+    -moz-animation: show-bar-10-vertical-electricity 1.2s 0.7s forwards;
+    animation: show-bar-10-vertical-electricity 1.2s 0.7s forwards;
+}
+
+.bar-graph-two-electricity .bar-11-electricity .bar-electricity {
+    background-color: #EEAA01;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-11-vertical-electricity 1.2s 0.7s forwards;
+    -moz-animation: show-bar-11-vertical-electricity 1.2s 0.7s forwards;
+    animation: show-bar-11-vertical-electricity 1.2s 0.7s forwards;
+}
+
+.bar-graph-two-electricity .bar-12-electricity .bar-electricity {
+    background-color: #EEAA01;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-12-vertical-electricity 1.2s 0.7s forwards;
+    -moz-animation: show-bar-12-vertical-electricity 1.2s 0.7s forwards;
+    animation: show-bar-12-vertical-electricity 1.2s 0.7s forwards;
+}
+
+/* Bar Graph Vertical Animations */
+@-webkit-keyframes show-bar-one-vertical-electricity {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 45%;
+    }
+}
+
+@-webkit-keyframes show-bar-two-vertical-electricity {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 45%;
+    }
+}
+
+@-webkit-keyframes show-bar-three-vertical-electricity {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 58%;
+    }
+}
+
+@-webkit-keyframes show-bar-four-vertical-electricity {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 45%;
+    }
+}
+
+@-webkit-keyframes show-bar-five-vertical-electricity {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 45%;
+    }
+}
+@-webkit-keyframes show-bar-six-vertical-electricity {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 70%;
+    }
+}
+
+@-webkit-keyframes show-bar-seven-vertical-electricity {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 70%;
+    }
+}
+
+@-webkit-keyframes show-bar-8-vertical-electricity {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 60%;
+    }
+}
+
+@-webkit-keyframes show-bar-9-vertical-electricity {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 20%;
+    }
+}
+
+@-webkit-keyframes show-bar-10-vertical-electricity {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 67%;
+    }
+}
+
+@-webkit-keyframes show-bar-11-vertical-electricity {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 56%;
+    }
+}
+
+@-webkit-keyframes show-bar-12-vertical-electricity {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 34%;
+    }
 }

@@ -1,4 +1,5 @@
-<nav class="glassmorphism border-25 mx-1 px-5 py-2 navbar">
+<nav class="glassmorphism border-25 px-5 py-2 navbar">
+    <div>
     <ul class="flex flex-row justify-between">
         <li>
             <a href="profile.php">
