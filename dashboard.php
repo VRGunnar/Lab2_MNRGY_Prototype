@@ -1,5 +1,10 @@
 <?php
 include_once ("partials/nav.inc.php");
+
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: index.php");
+}
 ?>
 
 <!doctype html>

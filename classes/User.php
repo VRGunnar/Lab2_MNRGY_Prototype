@@ -35,7 +35,7 @@ class User {
         return $result;
     }
 
-    static function userLogin($username, $password)
+    static public function userLogin($username, $password)
     {
         $conn = db::getConnection();
         $statement = $conn->prepare("select * from users where username = :username");
@@ -49,6 +49,23 @@ class User {
         if(password_verify($password, $hash)){
             return true;
         }else{
+            return false;
+        }
+    }
+
+    static public function userUpdate($username, $password, $newPassword) {
+        if(self::userLogin($username, $password)){
+            $conn = db::getConnection();
+            $options = [
+                'cost' => 12,
+            ];
+            $hashed = password_hash($newPassword, PASSWORD_DEFAULT, $options);
+            $statement = $conn->prepare("UPDATE users SET password=:password WHERE username=:username");
+            $statement->bindValue(":username", $username);
+            $statement->bindValue(":password", $hashed);
+            $statement->execute();
+        }
+        else {
             return false;
         }
     }

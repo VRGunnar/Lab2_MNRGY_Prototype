@@ -62,11 +62,10 @@ p {
 }
 
 .glassmorphism2 {
-    background: rgba(255, 255, 255, 0.35);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(20.0px);
     -webkit-backdrop-filter: blur(20.0px);
-    border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
@@ -80,6 +79,12 @@ button:focus-visible {
 
 .button:hover {
     background-color: #F83B50;
+}
+
+.background1 {
+    background-image: url("../images/SVG/background1.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .background3 {
@@ -163,6 +168,80 @@ button:focus-visible {
     border:0px;
     outline:none;
     border-radius: 4px;
+}
+
+.selectDiv2 {
+    border-radius: 25px;
+    display:inline-block;
+    overflow:hidden;
+    height: 1.5rem;
+    width:3rem;
+}
+
+.selectBox2 {
+    width:3rem;
+    height: 1.5rem;
+    border:0px;
+    outline:none;
+    border-radius: 25px;
+}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 1.5rem;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    left: 1px;
+}
+
+input:checked + .slider {
+    background-color: #1DD05D;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #1DD05D;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
 
     /* Gas graph */

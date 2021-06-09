@@ -1,5 +1,18 @@
 <?php
 include_once("partials/nav.inc.php");
+include_once ("classes/User.php");
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: index.php");
+}
+
+if(!empty($_POST['btnSave'])) {
+    $nPassword = $_POST['nPassword'];
+    $cPassword = $_POST['currentPassword'];
+    $Username = $_POST['newPassword'];
+    User::userUpdate($Username, $cPassword, $nPassword);
+}
+
 ?>
 
 <!doctype html>
@@ -33,7 +46,7 @@ include_once("partials/nav.inc.php");
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
                                 aria-hidden="true">&times;</span></button>
                     <ul>
-                        <li class="text-sm font-normal">Login credentials are incorrect.</li>
+                        <li class="text-sm font-normal">Username or password was incorrect.</li>
                     </ul>
                 </div>
             <?php endif; ?>
