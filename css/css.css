@@ -27,6 +27,10 @@ p {
     color: #282B33;
 }
 
+.text-green {
+    color: #1DD05D;
+}
+
 .bg-green {
     background-color: #1DD05D;
 }
@@ -35,11 +39,28 @@ p {
     background-color: #00B7E5;
 }
 
+.bg-red {
+    background-color: #F95466;
+}
+
+.bg-white {
+    background-color: #f8f8ff;
+}
+
 .glassmorphism {
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 255, 255, 255, 0.03);
     backdrop-filter: blur(20.0px);
     -webkit-backdrop-filter: blur(20.0px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.glassmorphism2 {
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20.0px );
+    -webkit-backdrop-filter: blur( 20.0px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
@@ -54,6 +75,12 @@ p {
 
 .background3 {
     background-image: url("../images/SVG/background3.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.background4 {
+    background-image: url("../images/SVG/background4.svg");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -94,4 +121,12 @@ p {
 
 .border-25 {
     border-radius: 25px;
+}
+
+.line-w {
+    width: 65.3%;
+}
+
+.line-w2 {
+    width: 79%;
 }
