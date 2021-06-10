@@ -241,7 +241,7 @@ if (!isset($_SESSION['username'])) {
     </div>
 </div>
 
-<div class="w-full glassmorphism mt-8 p-3 flex flex-col">
+<div class="w-full glassmorphism mt-6 p-3 flex flex-col">
     <h3 class="font-medium text-xl col-start-1 col-end-2 justify-self-start">Potential Energy</h3>
 
     <div>
@@ -420,7 +420,7 @@ if (!isset($_SESSION['username'])) {
     </div>
 </div>
 
-<div class="w-full glassmorphism mt-8 p-3 flex flex-col mb-24">
+<div class="w-full glassmorphism mt-6 p-3 flex flex-col mb-24">
     <h3 class="font-medium text-xl col-start-1 col-end-2 justify-self-start">Generated energy history</h3>
 
     <div>

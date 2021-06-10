@@ -74,7 +74,7 @@ include_once("partials/nav.inc.php");
     </svg>
     <p class="text-black font-semibold text-3xl col-start-2 cold-end-3 row-start-1 row-end-2 justify-self-end">
         Charged</p>
-    <p class="text-white pl-5 font-bold text-4xl col-start-2 cold-end-3 row-start-2 row-end-3 justify-self-left">33%</p>
+    <p class="text-white pl-5 font-bold text-4xl col-start-2 cold-end-3 row-start-2 row-end-3 justify-self-start">33%</p>
 </div>
 
 <div class="w-full glassmorphism mt-8">

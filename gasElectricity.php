@@ -106,7 +106,7 @@ if (!isset($_SESSION['username'])) {
     </div>
 </div>
 
-<div class="w-full glassmorphism mt-8 p-3 flex flex-col mb-24">
+<div class="w-full glassmorphism mt-6 p-3 flex flex-col mb-24">
     <div class="grid grid-cols-2 items-center justify-items-stretch">
         <h3 class="font-medium text-xl col-start-1 col-end-2 justify-self-start">Electricity statistics</h3>
         <div class="h-9 bg-white rounded-full flex flex-row justify-evenly p-1 gap-x-1.5 col-start-2 col-end-3 justify-self-end">

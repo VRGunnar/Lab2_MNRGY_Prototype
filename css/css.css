@@ -1055,3 +1055,251 @@ input:checked + .slider:before {
         height: 34%;
     }
 }
+
+/* Consumed graph */
+
+.bar-graph-consumed .year-consumed {
+    -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+    -moz-animation: fade-in-text 2.2s 0.1s forwards;
+    animation: fade-in-text 2.2s 0.1s forwards;
+}
+
+.bar-graph-vertical-consumed {
+    margin-top: 20px;
+    max-width: 680px;
+}
+
+.bar-graph-vertical-consumed .bar-container-consumed {
+    float: left;
+    height: 240px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    position: relative;
+    text-align: center;
+    width: 32px;
+}
+
+.bar-graph-vertical-consumed .bar-consumed {
+    border-radius: 30px;
+    bottom: 40px;
+    position: absolute;
+    text-align: center;
+    width: 25px;
+    margin-left: 4px;
+}
+
+.bar-graph-vertical-consumed .year-consumed {
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #f8f8ff;
+}
+
+.bar-graph-two-consumed .bar-one-consumed .bar-consumed {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-one-vertical-consumed 1.2s 0.1s forwards;
+    -moz-animation: show-bar-one-vertical-consumed 1.2s 0.1s forwards;
+    animation: show-bar-one-vertical-consumed 1.2s 0.1s forwards;
+}
+
+.bar-graph-two-consumed .bar-two-consumed .bar-consumed {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-two-vertical-consumed 1.2s 0.2s forwards;
+    -moz-animation: show-bar-two-vertical-consumed 1.2s 0.2s forwards;
+    animation: show-bar-two-vertical-consumed 1.2s 0.2s forwards;
+}
+
+.bar-graph-two-consumed .bar-three-consumed .bar-consumed {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-three-vertical-consumed 1.2s 0.3s forwards;
+    -moz-animation: show-bar-three-vertical-consumed 1.2s 0.3s forwards;
+    animation: show-bar-three-vertical-consumed 1.2s 0.3s forwards;
+}
+
+.bar-graph-two-consumed .bar-four-consumed .bar-consumed {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-four-vertical-consumed 1.2s 0.4s forwards;
+    -moz-animation: show-bar-four-vertical-consumed 1.2s 0.4s forwards;
+    animation: show-bar-four-vertical-consumed 1.2s 0.4s forwards;
+}
+
+.bar-graph-two-consumed .bar-five-consumed .bar-consumed {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-five-vertical-consumed 1.2s 0.5s forwards;
+    -moz-animation: show-bar-five-vertical-consumed 1.2s 0.5s forwards;
+    animation: show-bar-five-vertical-consumed 1.2s 0.5s forwards;
+}
+
+.bar-graph-two-consumed .bar-six-consumed .bar-consumed {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-six-vertical-consumed 1.2s 0.6s forwards;
+    -moz-animation: show-bar-six-vertical-consumed 1.2s 0.6s forwards;
+    animation: show-bar-six-vertical-consumed 1.2s 0.6s forwards;
+}
+
+.bar-graph-two-consumed .bar-seven-consumed .bar-consumed {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-seven-vertical-consumed 1.2s 0.7s forwards;
+    -moz-animation: show-bar-seven-vertical-consumed 1.2s 0.7s forwards;
+    animation: show-bar-seven-vertical-consumed 1.2s 0.7s forwards;
+}
+
+.bar-graph-two-consumed .bar-8-consumed .bar-consumed {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-8-vertical-consumed 1.2s 0.7s forwards;
+    -moz-animation: show-bar-8-vertical-consumed 1.2s 0.7s forwards;
+    animation: show-bar-8-vertical-consumed 1.2s 0.7s forwards;
+}
+
+.bar-graph-two-consumed .bar-9-consumed .bar-consumed {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-9-vertical-consumed 1.2s 0.7s forwards;
+    -moz-animation: show-bar-9-vertical-consumed 1.2s 0.7s forwards;
+    animation: show-bar-9-vertical-consumed 1.2s 0.7s forwards;
+}
+
+.bar-graph-two-consumed .bar-10-consumed .bar-consumed {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-10-vertical-consumed 1.2s 0.7s forwards;
+    -moz-animation: show-bar-10-vertical-consumed 1.2s 0.7s forwards;
+    animation: show-bar-10-vertical-consumed 1.2s 0.7s forwards;
+}
+
+.bar-graph-two-consumed .bar-11-consumed .bar-consumed {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-11-vertical-consumed 1.2s 0.7s forwards;
+    -moz-animation: show-bar-11-vertical-consumed 1.2s 0.7s forwards;
+    animation: show-bar-11-vertical-consumed 1.2s 0.7s forwards;
+}
+
+.bar-graph-two-consumed .bar-12-consumed .bar-consumed {
+    background-color: #1DD05D;
+    border: 2px solid #f8f8ff;
+    -webkit-animation: show-bar-12-vertical-consumed 1.2s 0.7s forwards;
+    -moz-animation: show-bar-12-vertical-consumed 1.2s 0.7s forwards;
+    animation: show-bar-12-vertical-consumed 1.2s 0.7s forwards;
+}
+
+/* Bar Graph Vertical Animations */
+@-webkit-keyframes show-bar-one-vertical-consumed {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 45%;
+    }
+}
+
+@-webkit-keyframes show-bar-two-vertical-consumed {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 45%;
+    }
+}
+
+@-webkit-keyframes show-bar-three-vertical-consumed {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 58%;
+    }
+}
+
+@-webkit-keyframes show-bar-four-vertical-consumed {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 45%;
+    }
+}
+
+@-webkit-keyframes show-bar-five-vertical-consumed {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 45%;
+    }
+}
+
+@-webkit-keyframes show-bar-six-vertical-consumed {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 70%;
+    }
+}
+
+@-webkit-keyframes show-bar-seven-vertical-consumed {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 70%;
+    }
+}
+
+@-webkit-keyframes show-bar-8-vertical-consumed {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 60%;
+    }
+}
+
+@-webkit-keyframes show-bar-9-vertical-consumed {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 20%;
+    }
+}
+
+@-webkit-keyframes show-bar-10-vertical-consumed {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 67%;
+    }
+}
+
+@-webkit-keyframes show-bar-11-vertical-consumed {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 56%;
+    }
+}
+
+@-webkit-keyframes show-bar-12-vertical-consumed {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 34%;
+    }
+}
+
