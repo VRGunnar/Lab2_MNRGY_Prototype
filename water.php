@@ -1,4 +1,6 @@
 <?php
+include_once ('partials/nav.inc.php');
+
 session_start();
 if (!isset($_SESSION['username'])) {
     header("Location: index.php");
@@ -53,17 +55,60 @@ if (!isset($_SESSION['username'])) {
     <h1 class="font-bold text-2xl mb-2">Water</h1>
     <span class="w-4/5 bg-blue h-0.5 block self-center"></span>
 </div>
-<div class="flex justify-center items-center ">
-    <div class="circle flex justify-center items-center">
-        <div class="tempCircle flex justify-center items-center">
-            <div class="infoCircle flex flex-col justify-center items-center text-white">
-                <p class="font-bold text-6xl">50<sup class="text-3xl">°C</sup></p>
-                <p class="font-light text-base">BOILER TEMPERATURE</p>
+<div class="w-full glassmorphism3 flex flex-col mb-24">
+    <div class="flex justify-center items-center">
+        <div class="circle flex justify-center items-center">
+            <div class="tempCircle flex justify-center items-center">
+                <div class="infoCircle flex flex-col justify-center items-center text-white">
+                    <p id="boilerTemp" class="font-bold text-6xl">50<sup class="text-3xl">°C</sup></p>
+                    <p class="font-light text-base">BOILER TEMPERATURE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4 py-3 px-5 flex flex-col mb-1.5">
+        <h2 class="font-normal text-lg">Goal temperature</h2>
+        <div class="flex flex-row items-center">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="80" value="50" id="myRange" class="slider2">
+            </div>
+            <p class="ml-1.5 text-lg font-medium text-white w-12" id="temp"> 50°C</p>
+        </div>
+        <div class="mt-4">
+            <h2 class="font-normal text-base">When do you need warm water?</h2>
+            <div class="flex flex-wrap justify-between mt-2 gap-y-2">
+                <button class="bg-white rounded-full px-2">05:00</button>
+                <button class="bg-white rounded-full px-2">06:00</button>
+                <button class="bg-orange text-white rounded-full px-2">07:00</button>
+                <button class="bg-orange text-white rounded-full px-2">08:00</button>
+                <button class="bg-white rounded-full px-2">09:00</button>
+                <button class="bg-white rounded-full px-2">10:00</button>
+                <button class="bg-white rounded-full px-2">11:00</button>
+                <button class="bg-white rounded-full px-2">12:00</button>
+                <button class="bg-white rounded-full px-2">13:00</button>
+                <button class="bg-white rounded-full px-2">14:00</button>
+                <button class="bg-white rounded-full px-2">15:00</button>
+                <button class="bg-orange text-white rounded-full px-2">16:00</button>
+                <button class="bg-orange text-white rounded-full px-2">17:00</button>
+                <button class="bg-orange text-white rounded-full px-2">18:00</button>
+                <button class="bg-orange text-white rounded-full px-2">19:00</button>
+                <button class="bg-orange text-white rounded-full px-2">20:00</button>
+                <button class="bg-white rounded-full px-2">21:00</button>
+                <button class="bg-white rounded-full px-2">22:00</button>
+                <button class="bg-white rounded-full px-2">23:00</button>
+                <button class="bg-white rounded-full px-2">24:00</button>
+                <button class="text-white font-medium text-base underline">Mon</button>
+                <button class="text-white font-medium text-base">Tue</button>
+                <button class="text-white font-medium text-base">Wed</button>
+                <button class="text-white font-medium text-base">Thu</button>
+                <button class="text-white font-medium text-base">Fri</button>
+                <button class="text-white font-medium text-base">Sat</button>
+                <button class="text-white font-medium text-base">Sun</button>
             </div>
         </div>
     </div>
 </div>
-
 
 <script src="js/water.js"></script>
 </body>
